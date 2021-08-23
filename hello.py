@@ -4,3 +4,7 @@
 
 print("Hello, World!") # this is also a comment
 print("Hello, Omar!")
+
+my_msg = 'Omar was here...'
+
+print(my_msg)
