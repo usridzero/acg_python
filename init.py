@@ -2,7 +2,7 @@ import os
 def clear(): os.system('clear') 
 
 #import readline 
-#readline.write_history_file('python_history.txt')
+#readline.append_history_file('python_history.txt')
 
 #def ipyhistory(lastn=None):
 def history(lastn=None):
