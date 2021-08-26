@@ -1,0 +1,29 @@
+import readline
+for i in range(readline.get_current_history_length()):
+print readline.get_history_item(i + 1)
+for i in range(readline.get_current_history_length()):
+    print readline.get_history_item(i + 1)
+history()
+clear()
+import os
+os.system('clear')
+clear()
+import system
+import os
+def clear():
+os.system('clear')
+clear()
+import os
+def clear(): os.system('clear')
+clear()
+import readline
+for i in range(readline.get_current_history_length()): print readline.get_history_item(i + 1)
+history()
+clear()
+import readline; print('\n'.join([str(readline.get_history_item(i + 1)) for i in range(readline.get_current_history_length())]))
+history()
+clear
+clear()
+history()
+import readline
+readline.write_history_file('python_history.txt')
