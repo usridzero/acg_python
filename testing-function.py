@@ -11,14 +11,12 @@ def split_name(name):
     'first_name': first_name,
     'last_name': last_name,
   }
-# how to print this....
-#split_name("Kevin Bacon")
-#print("names")
 
 assert split_name("Kevin Bacon") == {
     "first_name": "Kevin",
     "last_name": "Bacon",
 }, f"Expected {{'first_name': 'Kevin', 'last_name': 'Bacon'}} but received {split_name('Kevin Bacon')}"
+print(split_name("Kevin Bacon"))
 
 # 2) Ensure that `split_name` can handle multi-word last names
 def split_name(name):
@@ -32,6 +30,7 @@ assert split_name("Victor Von Doom") == {
     "first_name": "Victor",
     "last_name": "Von Doom",
 }, f"Expected {{'first_name': 'Victor', 'last_name': 'Von Doom'}} but received {split_name('Victor Von Doom')}"
+print(split_name("Victor Von Doom"))
 
 # 3) Write an `is_palindrome` function to check if a string is a palindrome (reads the same from left-to-right and right-to-left)
 def is_palindrome(item):
