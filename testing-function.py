@@ -16,7 +16,9 @@ assert split_name("Kevin Bacon") == {
     "first_name": "Kevin",
     "last_name": "Bacon",
 }, f"Expected {{'first_name': 'Kevin', 'last_name': 'Bacon'}} but received {split_name('Kevin Bacon')}"
+print("1st split name function for Kevin Bacon:")
 print(split_name("Kevin Bacon"))
+print("")
 
 # 2) Ensure that `split_name` can handle multi-word last names
 def split_name(name):
@@ -30,7 +32,9 @@ assert split_name("Victor Von Doom") == {
     "first_name": "Victor",
     "last_name": "Von Doom",
 }, f"Expected {{'first_name': 'Victor', 'last_name': 'Von Doom'}} but received {split_name('Victor Von Doom')}"
+print("2nd split name function for Victor Von Doom")
 print(split_name("Victor Von Doom"))
+print("")
 
 # 3) Write an `is_palindrome` function to check if a string is a palindrome (reads the same from left-to-right and right-to-left)
 def is_palindrome(item):
@@ -38,6 +42,10 @@ def is_palindrome(item):
 
 assert is_palindrome("radar") == True, f"Expected True but got {is_palindrome('radar')}"
 assert is_palindrome("stop") == False, f"Expected False but got {is_palindrome('stop')}"
+print("Testing the palindrome function")
+print("Is radar a palindrome:", end=' '), print(is_palindrome("radar"))
+print("Is stop a palindrome:", end=' '), print(is_palindrome("stop"))
+print("")
 
 # 4) Make `is_palindrome` work with numbers
 def is_palindrome(item):
@@ -46,6 +54,10 @@ def is_palindrome(item):
 
 assert is_palindrome(101) == True, f"Expected True but got {is_palindrome(101)}"
 assert is_palindrome(10) == False, f"Expected False but got {is_palindrome(10)}"
+print("Testing the string palindrome function")
+print("Is 101 a palindrome:", end=' '), print(is_palindrome("101"))
+print("Is 10 a palindrome:", end=' '), print(is_palindrome("10"))
+print("")
 
 # 5) Write a `build_list` function that takes an item and a number to include in a list
 def build_list(item, count=1):
@@ -59,6 +71,9 @@ assert build_list("Apple", 3) == [
     "Apple",
     "Apple",
 ], f"Expected ['Apple', 'Apple', 'Apple'] but received {repr(build_list('Apple', 3))}"
+print(build_list("Apple", 3))
+
 assert build_list("Orange") == [
     "Orange"
 ], f"Expected ['Orange'] but received {repr(build_list('Orange'))}"
+print(build_list("Orange"))
