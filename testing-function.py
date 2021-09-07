@@ -17,7 +17,8 @@ assert split_name("Kevin Bacon") == {
     "last_name": "Bacon",
 }, f"Expected {{'first_name': 'Kevin', 'last_name': 'Bacon'}} but received {split_name('Kevin Bacon')}"
 print("1st split name function for Kevin Bacon:")
-print(split_name("Kevin Bacon"))
+name = input("Enter your full name: ")
+print(split_name(name))
 print("")
 
 # 2) Ensure that `split_name` can handle multi-word last names
@@ -33,7 +34,8 @@ assert split_name("Victor Von Doom") == {
     "last_name": "Von Doom",
 }, f"Expected {{'first_name': 'Victor', 'last_name': 'Von Doom'}} but received {split_name('Victor Von Doom')}"
 print("2nd split name function for Victor Von Doom")
-print(split_name("Victor Von Doom"))
+name = input("Enter your full name: ")
+print(split_name(name))
 print("")
 
 # 3) Write an `is_palindrome` function to check if a string is a palindrome (reads the same from left-to-right and right-to-left)
